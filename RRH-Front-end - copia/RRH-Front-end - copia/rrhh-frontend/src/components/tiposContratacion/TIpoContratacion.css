@@ -1,0 +1,91 @@
+/* Estilos específicos para los componentes de Tipo de Contratación */
+
+/* Animaciones */
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Estilos para los botones de acción */
+  .btn-action {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+  }
+  
+  .btn-action:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para las tarjetas */
+  .card {
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08) !important;
+  }
+  
+  /* Estilos para las tablas */
+  .table {
+    margin-bottom: 0;
+  }
+  
+  .table th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .table td {
+    vertical-align: middle;
+  }
+  
+  /* Cursor pointer para elementos seleccionables */
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  
+  .cursor-pointer:hover {
+    background-color: rgba(13, 110, 253, 0.05);
+  }
+  
+  /* Estilos para los formularios */
+  .form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+  }
+  
+  .form-label {
+    font-weight: 500;
+  }
+  
+  /* Spinner personalizado */
+  .fa-spin {
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
